@@ -1,0 +1,60 @@
+#dead,#start {
+	display:none;
+}
+#background {
+	position  : absolute;
+	height    : 100%;
+	width     : 100%;
+	top       : 0px;
+	left      : 0px;
+	background: transparent;
+	z-index   : -1;
+}
+#elephant{
+	position  : absolute;
+	height    : 100%;
+	width     : 100%;
+	top       : 0px;
+	left      : 0px;
+	background: transparent;
+	z-index   : 0;
+}
+#hunter {
+	position  : absolute;
+	height    : 100%;
+	width     : 100%;
+	top       : 0px;
+	left      : 0px;
+	background: transparent;
+	z-index   : 1;
+}
+#nuts {
+	position  : absolute;
+	height    : 100%;
+	width     : 100%;
+	top       : 0px;
+	left      : 0px;
+	background: transparent;
+	z-index   : 2;
+}
+#starting {
+background: url(../images/1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#yayDone { 
+  background: url(../images/end.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#yayDone1 { 
+  background: url(../images/ily.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
