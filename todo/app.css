@@ -1,0 +1,70 @@
+html, body {
+  background-color: #6600cc;
+  color: #ffcc00; }
+
+header {
+  text-align: center; }
+  header input {
+    width: 50%;
+    height: 50px;
+    font-size: 30px; }
+
+.link:hover {
+  color: #63D1F4; }
+
+.spacing, section#main, footer {
+  padding-left: 20%;
+  margin-top: 3%; }
+
+section#main {
+  font-size: 20px; }
+  section#main ul {
+    list-style-type: none;
+    padding: 0; }
+    section#main ul li {
+      width: 60%;
+      min-height: 30px;
+      line-height: 30px; }
+      section#main ul li span.options {
+        display: none;
+        margin-left: 10px; }
+    section#main ul li.editing input[type="text"], section#main ul li.editing span.options {
+      display: inline-block !important; }
+    section#main ul li.editing div.view {
+      display: none; }
+    section#main ul .overlap, section#main ul div.view, section#main ul div.view span {
+      position: absolute;
+      display: inline-block; }
+    section#main ul input[type="text"] {
+      display: none;
+      height: 20px;
+      width: 60%; }
+    section#main ul div.view {
+      min-width: 45%; }
+      section#main ul div.view span {
+        word-break: break-word;
+        min-width: 30%; }
+      section#main ul div.view input[type="checkbox"]:checked + span {
+        color: #cc0000; }
+    section#main ul li:not(.editing):hover i {
+      visibility: visible !important; }
+    section#main ul i {
+      visibility: hidden;
+      float: right;
+      height: 30px;
+      width: 30px;
+      clear: both;
+      text-align: center;
+      border-radius: 100%;
+      background-color: #ffcc00;
+      color: #cc0000; }
+    section#main ul i:before {
+      line-height: 30px; }
+    section#main ul .editBtns {
+      float: right;
+      margin-left: 7px; }
+
+footer #clear-completed {
+  color: #cc0000; }
+
+/*# sourceMappingURL=app.css.map */
