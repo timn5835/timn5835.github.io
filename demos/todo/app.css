@@ -22,7 +22,7 @@ section#main {
     list-style-type: none;
     padding: 0; }
     section#main ul li {
-      width: 60%;
+      width: 70%;
       min-height: 30px;
       line-height: 30px; }
       section#main ul li span.options {

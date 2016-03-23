@@ -61,14 +61,14 @@ var imageRepository = new function() {
 	}
 	
 	// Set images src
-	this.background.src = "/elephant/images/forest.jpg";
-	this.e1.src       = "/elephant/images/e.png";
-	this.e2.src       = "/elephant/images/e2.png";
-	this.e3.src       = "/elephant/images/e3.png";
-	this.bullet.src   = "/elephant/images/bullet1.png";
-	this.peanut.src   = "/elephant/images/peanut.png";
-	this.hunter.src   = "/elephant/images/hunter.png";
-	this.heart.src   = "/elephant/images/heart.png";
+	this.background.src = "/demos/elephant/images/forest.jpg";
+	this.e1.src       = "/demos/elephant/images/e.png";
+	this.e2.src       = "/demos/elephant/images/e2.png";
+	this.e3.src       = "/demos/elephant/images/e3.png";
+	this.bullet.src   = "/demos/elephant/images/bullet1.png";
+	this.peanut.src   = "/demos/elephant/images/peanut.png";
+	this.hunter.src   = "/demos/elephant/images/hunter.png";
+	this.heart.src   = "/demos/elephant/images/heart.png";
 }
 
 
