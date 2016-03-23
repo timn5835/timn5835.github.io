@@ -1,0 +1,56 @@
+html {
+	height: 100%;
+}
+
+body {
+	text-align: center;
+	margin-top: 10%;
+	background-color: #6D929B;
+	height: 100%;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'Bubblegum Sans', cursive, Sans Serif;
+	font-size: 65px;
+	margin-bottom: 30px;
+}
+
+#speaker {
+	margin: 0 2px;
+	padding: 5px;
+	border: 1px solid black;
+	border-radius: 100%;
+	font-size: 35px;
+}
+
+input[type='text'] {
+	text-align: center;
+	width: 50%;
+	height: 10%;
+	font-size: 25px;
+}
+
+#score {
+	background-image: url('http://www.psdgraphics.com/file/crumpled-paper.jpg');
+	background-size: cover;
+	background-position: center center;
+	position: absolute;
+	top: 100vh;
+	left: 0;
+	height:100%;
+	width: 100%;
+	transition: top 800ms ease-in-out;
+	padding: 0% 5%;
+	overflow: auto;
+}
+#score table {
+	width: 100%;
+}
+#score td{
+	font-size: 25px;
+}
+#score th td{
+	text-decoration: underline;
+	font-weight: bold;
+}
