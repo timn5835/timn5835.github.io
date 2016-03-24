@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Tim Nguyen</title>
+    <link href=
+    "http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" rel=
+    "stylesheet">
+    <style>
+    	.column a{
+    		margin-bottom: 15px;
+    	}
+
+    	.column a:last-child{
+    		float: right;
+    	}
+
+    	.unavailable {
+    		pointer-events: none;
+    		cursor: default;
+    		color: #D3D3D3;
+    	}
+    </style>
+    <script>
+        function setLink() {
+        	document.getElementById('multitask').href = "http://cs.neiu.edu/~mtdiff/uploads/finished/consent.php?workerID=" + new Date().valueOf() + "#";
+        }
+    </script>
+</head>
+<body onload="setLink()">
+    <div class="off-canvas-wrapper">
+        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+            <div class="off-canvas position-left reveal-for-large"
+            data-off-canvas="" data-position="left" id="my-info">
+                <div class="row column">
+                    <br>
+                    <img class="thumbnail" src="images/tim.jpg">
+                    <h5>Tim Nguyen</h5>
+                    <p>Ever since taking an introductory HTML course in highschool, I knew that I wanted to study web development.  From then on, I have worked on many projects and researched many web technologies.  I have learned much from my friends and professors at Northeastern Illinois University, where I graduated from with a Bachelor of Science Degree in Computer Science and a minor of Applied Mathematics.</p>
+                </div>
+            </div>
+            <div class="off-canvas-content" data-off-canvas-content="">
+                <div class="title-bar hide-for-large">
+                    <div class="title-bar-left">
+                        <button class="menu-icon" data-open="my-info" type=
+                        "button"></button> <span class="title-bar-title">Tim Nguyen</span>
+                    </div>
+                </div>
+                <div class="callout primary">
+                    <div class="row column">
+                        <h1>Below are some projects that I have worked on.</h1>
+                    </div>
+                </div>
+                <div class="row small-up-2 medium-up-3 large-up-4">
+                    <div class="column">
+                        <h6>To Do List</h6>
+                        <img class="thumbnail" src=
+                        "images/todo.png">
+                        <a href="https://github.com/timn5835/todo-list" target="_blank">Repository</a><a href="http://timn5835.github.io/demos/todo/" target="_blank">Demo</a>
+                    </div>
+                    <div class="column">
+                        <h6>Multitasking Research</h6>
+                        <img class="thumbnail" src=
+                        "images/multi.png">
+                        <a href="https://github.com/timn5835/Multitasking-Research" target="_blank">Repository</a><a id="multitask" href="" target="_blank">Demo</a>
+                    </div>
+                    <div class="column">
+                        <h6>Spelling Bee</h6>
+                        <img class="thumbnail" src=
+                        "images/spelling.png">
+                        <a href="https://github.com/timn5835/spellingbee" target="_blank">Repository</a><a href="http://timn5835.github.io/demos/spellingbee/" target="_blank">Demo</a>
+                    </div>
+                    <div class="column">
+                        <h6>Elephant Revenge</h6>
+                        <img class="thumbnail" src=
+                        "images/elephant.png">
+                        <a href="https://github.com/timn5835/elephant" target="_blank">Repository</a><a href="http://timn5835.github.io/demos/elephant/" target="_blank">Demo</a>
+                    </div>
+                    <div class="column">
+                        <h6>Shamrock Chicago</h6>
+                        <img class="thumbnail" src=
+                        "images/shamrock.png">
+                        <a class="unavailable">Repository</a><a href="http://shamrockchicago2016.com" target="_blank">Demo</a>
+                    </div>
+                    <div class="column">
+                        <h6>Celtic Chicago</h6>
+                        <img class="thumbnail" src=
+                        "images/celtic.png">
+                        <a class="unavailable">Repository</a><a href="http://celticchicago.com" target="_blank">Demo</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="medium-12 columns">
+                        <h3>Contact Me</h3>
+                        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/timothy-nguyen-3416b293">linkedin</a> if you have any questions, want collaborate with me, or just get to know me better.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js">
+    </script> 
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js">
+    </script> 
+    <script>
+      $(document).foundation();
+    </script>
+</body>
+</html>
