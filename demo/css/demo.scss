@@ -72,11 +72,22 @@ html, body, .page-wrapper {
 
 		.row {
 			margin-bottom: 50px;
-			height: 30%;
+			@media screen and (min-width: 40em) {
+				height: 30%;	
+			}
+			@media screen and (max-width: 40em) {
+				height: auto;
+				min-height: 35%;	
+			}
 			position: relative;
 
 			> .columns {
-				height: 100%;
+				@media screen and (min-width: 40em) {
+					height: 100%;	
+				}
+				@media screen and (max-width: 40em) {
+					margin: 25px 0;	
+				}
 				position: relative;
 			}
 		}
@@ -88,21 +99,6 @@ html, body, .page-wrapper {
 		}
 
 		.row:nth-child(2) {
-			@media screen and (max-width: 40em) {
-				.exp-img {
-					padding-top: 15%!important;
-					transform: translateY(-100%);
-					-webkit-transform: translateY(-100%);
-					-ms-transform: translateY(-100%);
-				}
-
-				.columns:first-child {
-					transform: translateY(100%);
-					-webkit-transform: translateY(100%);
-					-ms-transform: translateY(100%);
-				}
-			}
-
 			.exp-img:hover {
 				background-color: $orange-two;
 			}
@@ -115,7 +111,7 @@ html, body, .page-wrapper {
 			}
 		}
 
-		.exp-img {
+		.columns:first-child {
 			text-align: center;
 			display: table;
 			-webkit-transition: all 700ms ease-in-out;

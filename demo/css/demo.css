@@ -53,40 +53,41 @@ html, body, .page-wrapper {
       top: 100%; }
     .page-wrapper .content .row {
       margin-bottom: 50px;
-      height: 30%;
       position: relative; }
+      @media screen and (min-width: 40em) {
+        .page-wrapper .content .row {
+          height: 30%; } }
+      @media screen and (max-width: 40em) {
+        .page-wrapper .content .row {
+          height: auto;
+          min-height: 35%; } }
       .page-wrapper .content .row > .columns {
-        height: 100%;
         position: relative; }
+        @media screen and (min-width: 40em) {
+          .page-wrapper .content .row > .columns {
+            height: 100%; } }
+        @media screen and (max-width: 40em) {
+          .page-wrapper .content .row > .columns {
+            margin: 25px 0; } }
     .page-wrapper .content .row:first-child .exp-img:hover i:before {
       color: #FF9000; }
-    @media screen and (max-width: 40em) {
-      .page-wrapper .content .row:nth-child(2) .exp-img {
-        padding-top: 15% !important;
-        transform: translateY(-100%);
-        -webkit-transform: translateY(-100%);
-        -ms-transform: translateY(-100%); }
-      .page-wrapper .content .row:nth-child(2) .columns:first-child {
-        transform: translateY(100%);
-        -webkit-transform: translateY(100%);
-        -ms-transform: translateY(100%); } }
     .page-wrapper .content .row:nth-child(2) .exp-img:hover {
       background-color: #ffd297; }
     .page-wrapper .content .row:nth-child(3) i {
       font-weight: bold;
       color: #FF9000; }
-    .page-wrapper .content .exp-img {
+    .page-wrapper .content .columns:first-child {
       text-align: center;
       display: table;
       -webkit-transition: all 700ms ease-in-out;
       -ms-transition: all 700ms ease-in-out;
       transition: all 700ms ease-in-out; }
-      .page-wrapper .content .exp-img div {
+      .page-wrapper .content .columns:first-child div {
         display: table-cell;
         vertical-align: middle; }
-        .page-wrapper .content .exp-img div i {
+        .page-wrapper .content .columns:first-child div i {
           font-size: 100px; }
-        .page-wrapper .content .exp-img div i:before {
+        .page-wrapper .content .columns:first-child div i:before {
           -webkit-transition: color 700ms ease-in-out;
           -ms-transition: color 700ms ease-in-out;
           transition: color 700ms ease-in-out; }
