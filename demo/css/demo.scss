@@ -92,14 +92,14 @@ html, body, .page-wrapper {
 			}
 		}
 
-		.row:first-child .exp-img:hover {
+		.row:first-child .columns:first-child:hover {
 			i:before {
 				color: $btn-orange;
 			}
 		}
 
 		.row:nth-child(2) {
-			.exp-img:hover {
+			.columns:first-child:hover {
 				background-color: $orange-two;
 			}
 		}

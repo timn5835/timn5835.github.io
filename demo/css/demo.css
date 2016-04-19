@@ -69,9 +69,9 @@ html, body, .page-wrapper {
         @media screen and (max-width: 40em) {
           .page-wrapper .content .row > .columns {
             margin: 25px 0; } }
-    .page-wrapper .content .row:first-child .exp-img:hover i:before {
+    .page-wrapper .content .row:first-child .columns:first-child:hover i:before {
       color: #FF9000; }
-    .page-wrapper .content .row:nth-child(2) .exp-img:hover {
+    .page-wrapper .content .row:nth-child(2) .columns:first-child:hover {
       background-color: #ffd297; }
     .page-wrapper .content .row:nth-child(3) i {
       font-weight: bold;
