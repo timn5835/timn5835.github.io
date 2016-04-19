@@ -54,21 +54,28 @@ html, body, .page-wrapper {
     .page-wrapper .content .row {
       margin-bottom: 50px;
       position: relative; }
-      @media screen and (min-width: 40em) {
-        .page-wrapper .content .row {
-          height: 30%; } }
       @media screen and (max-width: 40em) {
         .page-wrapper .content .row {
           height: auto;
           min-height: 35%; } }
+      @media screen and (max-width: 975px) {
+        .page-wrapper .content .row {
+          height: 55%; } }
+      @media screen and (min-width: 976px) {
+        .page-wrapper .content .row {
+          height: 35%; } }
       .page-wrapper .content .row > .columns {
-        position: relative; }
+        position: relative;
+        display: table; }
         @media screen and (min-width: 40em) {
           .page-wrapper .content .row > .columns {
             height: 100%; } }
         @media screen and (max-width: 40em) {
           .page-wrapper .content .row > .columns {
             margin: 25px 0; } }
+        .page-wrapper .content .row > .columns div {
+          display: table-cell;
+          vertical-align: middle; }
     .page-wrapper .content .row:first-child .columns:first-child:hover i:before {
       color: #FF9000; }
     .page-wrapper .content .row:nth-child(2) .columns:first-child:hover {
@@ -78,19 +85,15 @@ html, body, .page-wrapper {
       color: #FF9000; }
     .page-wrapper .content .columns:first-child {
       text-align: center;
-      display: table;
       -webkit-transition: all 700ms ease-in-out;
       -ms-transition: all 700ms ease-in-out;
       transition: all 700ms ease-in-out; }
-      .page-wrapper .content .columns:first-child div {
-        display: table-cell;
-        vertical-align: middle; }
-        .page-wrapper .content .columns:first-child div i {
-          font-size: 100px; }
-        .page-wrapper .content .columns:first-child div i:before {
-          -webkit-transition: color 700ms ease-in-out;
-          -ms-transition: color 700ms ease-in-out;
-          transition: color 700ms ease-in-out; }
+      .page-wrapper .content .columns:first-child div i {
+        font-size: 100px; }
+      .page-wrapper .content .columns:first-child div i:before {
+        -webkit-transition: color 700ms ease-in-out;
+        -ms-transition: color 700ms ease-in-out;
+        transition: color 700ms ease-in-out; }
     .page-wrapper .content .button-group {
       text-align: center; }
       .page-wrapper .content .button-group:before {

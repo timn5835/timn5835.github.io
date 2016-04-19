@@ -72,12 +72,16 @@ html, body, .page-wrapper {
 
 		.row {
 			margin-bottom: 50px;
-			@media screen and (min-width: 40em) {
-				height: 30%;	
-			}
+
 			@media screen and (max-width: 40em) {
 				height: auto;
 				min-height: 35%;	
+			}
+			@media screen and (max-width: 975px) {
+				height: 55%;	
+			}
+			@media screen and (min-width: 976px) {
+				height: 35%;	
 			}
 			position: relative;
 
@@ -89,6 +93,12 @@ html, body, .page-wrapper {
 					margin: 25px 0;	
 				}
 				position: relative;
+				display: table;
+
+				div {
+					display: table-cell;
+					vertical-align: middle;
+				}
 			}
 		}
 
@@ -113,14 +123,12 @@ html, body, .page-wrapper {
 
 		.columns:first-child {
 			text-align: center;
-			display: table;
+			
 			-webkit-transition: all 700ms ease-in-out;
 			-ms-transition: all 700ms ease-in-out;
 			transition: all 700ms ease-in-out;
 
 			div {
-				display: table-cell;
-				vertical-align: middle;
 				i {
 					font-size: 100px;
 				}
