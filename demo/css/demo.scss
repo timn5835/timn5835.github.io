@@ -72,6 +72,11 @@ html, body, .page-wrapper {
 
 		.row {
 			margin-bottom: 50px;
+			height: 30%;
+
+			> .columns {
+				height: 100%;
+			}
 		}
 
 		.row:first-child .exp-img:hover {
@@ -109,21 +114,24 @@ html, body, .page-wrapper {
 		}
 
 		.exp-img {
-			height: 30%;
 			text-align: center;
-			padding-top: 4%;
+			display: table;
 			-webkit-transition: all 700ms ease-in-out;
 			-ms-transition: all 700ms ease-in-out;
 			transition: all 700ms ease-in-out;
 
-			i {
-				font-size: 100px;
-			}
+			div {
+				display: table-cell;
+				vertical-align: middle;
+				i {
+					font-size: 100px;
+				}
 
-			i:before {
-				-webkit-transition: color 700ms ease-in-out;
-				-ms-transition: color 700ms ease-in-out;
-				transition: color 700ms ease-in-out;
+				i:before {
+					-webkit-transition: color 700ms ease-in-out;
+					-ms-transition: color 700ms ease-in-out;
+					transition: color 700ms ease-in-out;
+				}
 			}
 		}
 

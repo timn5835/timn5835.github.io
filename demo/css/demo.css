@@ -52,7 +52,10 @@ html, body, .page-wrapper {
       position: relative;
       top: 100%; }
     .page-wrapper .content .row {
-      margin-bottom: 50px; }
+      margin-bottom: 50px;
+      height: 30%; }
+      .page-wrapper .content .row > .columns {
+        height: 100%; }
     .page-wrapper .content .row:first-child .exp-img:hover i:before {
       color: #FF9000; }
     @media screen and (max-width: 40em) {
@@ -71,18 +74,20 @@ html, body, .page-wrapper {
       font-weight: bold;
       color: #FF9000; }
     .page-wrapper .content .exp-img {
-      height: 30%;
       text-align: center;
-      padding-top: 4%;
+      display: table;
       -webkit-transition: all 700ms ease-in-out;
       -ms-transition: all 700ms ease-in-out;
       transition: all 700ms ease-in-out; }
-      .page-wrapper .content .exp-img i {
-        font-size: 100px; }
-      .page-wrapper .content .exp-img i:before {
-        -webkit-transition: color 700ms ease-in-out;
-        -ms-transition: color 700ms ease-in-out;
-        transition: color 700ms ease-in-out; }
+      .page-wrapper .content .exp-img div {
+        display: table-cell;
+        vertical-align: middle; }
+        .page-wrapper .content .exp-img div i {
+          font-size: 100px; }
+        .page-wrapper .content .exp-img div i:before {
+          -webkit-transition: color 700ms ease-in-out;
+          -ms-transition: color 700ms ease-in-out;
+          transition: color 700ms ease-in-out; }
     .page-wrapper .content .button-group {
       text-align: center; }
       .page-wrapper .content .button-group:before {
