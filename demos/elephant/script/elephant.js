@@ -617,7 +617,7 @@
 	 * Initialize the Game and starts it.
 	 */
 	var game = new Game();
-	function init() {
+	window.init = function() {
 		if(game.init())
 			game.start();
 	}
