@@ -73,9 +73,11 @@ html, body, .page-wrapper {
 		.row {
 			margin-bottom: 50px;
 			height: 30%;
+			position: relative;
 
 			> .columns {
 				height: 100%;
+				position: relative;
 			}
 		}
 

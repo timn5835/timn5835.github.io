@@ -53,9 +53,11 @@ html, body, .page-wrapper {
       top: 100%; }
     .page-wrapper .content .row {
       margin-bottom: 50px;
-      height: 30%; }
+      height: 30%;
+      position: relative; }
       .page-wrapper .content .row > .columns {
-        height: 100%; }
+        height: 100%;
+        position: relative; }
     .page-wrapper .content .row:first-child .exp-img:hover i:before {
       color: #FF9000; }
     @media screen and (max-width: 40em) {
