@@ -58,7 +58,7 @@ html, body, .page-wrapper {
         .page-wrapper .content .row {
           height: auto;
           min-height: 35%; } }
-      @media screen and (max-width: 975px) {
+      @media screen and (min-width: 40em) {
         .page-wrapper .content .row {
           height: 55%; } }
       @media screen and (min-width: 976px) {
