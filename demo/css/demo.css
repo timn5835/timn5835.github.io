@@ -45,9 +45,9 @@ html, body, .page-wrapper {
     opacity: .9;
     z-index: 0;
     padding: 5% 15%;
-    -webkit-transition: top 1s ease-in-out;
-    -ms-transition: top 1s ease-in-out;
-    transition: top 1s ease-in-out; }
+    -webkit-transition: top 750ms ease-in-out;
+    -ms-transition: top 750ms ease-in-out;
+    transition: top 750ms ease-in-out; }
     .page-wrapper .content.pushed-down {
       position: relative;
       top: 100%; }
