@@ -1,81 +1,88 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Elephant & BlueJay</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/style.css" />
-		<script type="text/javascript">
-			var counter=0;
-			function pics(){
-				switch(counter)
-				{
-					case 5:{
-						document.body.style.backgroundImage = "url('images/2.jpg')";
-					}
-					break;
-					case 7:{
-						document.body.style.backgroundImage = "url('images/3.jpg')";
-					}
-					break;
-					case 9:{
-						document.body.style.backgroundImage = "url('images/4.jpg')";
-					}
-					break;
-					case 11:{
-						document.body.style.backgroundImage = "url('images/5.jpg')";
-					}
-					break;
-					case 13:{
-						document.body.style.backgroundImage = "url('images/6.jpg')";
-					}
-					break;
-					case 15:{
-						document.body.style.backgroundImage = "url('images/7.jpg')";
-					}
-					break;
-					case 17:{
-						document.body.style.backgroundImage = "url('images/8.jpg')";
-					}
-					break;
-					case 21:{
-						document.body.style.backgroundImage = "url('images/angry.png')";
-					}
-					break;
-					case 23:{
-						document.body.style.backgroundImage = "url('images/angry3.png')";
-					}
-					break;
-					case 25:{
-						document.body.style.backgroundImage = "url('images/angry.png')";
-					}
-					break;
-					case 27:{
-						document.body.style.backgroundImage = "url('images/angry3.png')";
-					}
-					break;
-					case 28:{
-						document.body.style.backgroundImage = "url('images/angry2.png')";
-					}
-					break;
-					case 29:{
-						document.body.style.backgroundImage = "url('images/angry3.png')";
-					}
-					break;
-					case 30:{
-						document.body.style.backgroundImage = "url('images/angry2.png')";
-					}
-					break;
-					case 31:{
-						document.location.replace("elephant_run.html");
-					}
-					break;
-				}
-				counter++;
-			}
-			setInterval(pics,250);
-		</script>
-	</head>
-	<body id="starting">
+		<title>Forest</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/css/style.css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript" src="/script/elephant.js"></script>
+	</head>
+	<body onload="clickIt()">
+		<button type="button" id="dead" data-toggle="modal" data-target="#gameOver"></button>
+		<button type="button" id="start" data-toggle="modal" data-target="#gameStart"></button>
+		<!-- <img src="/images/bgtest.jpg" id="bgImg"> -->
+		<canvas id="players" width="1000" height="1000">
+			Sorry, this browser does not support canvas.
+		</canvas>
+		<canvas id="projectiles" width="1000" height="1000">
+		</canvas>
+		
+		<!--Game Start Modal -->
+		<div class="modal fade" id="gameStart" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+
+		  <!-- Game Start Modal Content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" onclick="begin()">&times;</button>
+			  <h3 class="modal-title">Save Her</h3>
+			</div>
+			<div class="modal-body">
+			  <p>Your friend, Blue Jay, has been taken by some rotten poachers.  Use the controls listed below to go rescue her.</p>
+			  <table>
+				<tr>
+					<td>Arrows:</td>   
+					<td>Run and Jump</td>
+				</tr>
+				<tr>
+					<td>Space:</td> 
+					<td>Shoot peanut to cancel one bullet (5 peanuts then 5-second reload)</td>
+				</tr>
+				<tr>
+					<td>Note:</td>     
+					<td>The hunters also have to reload, but they have 7 bullets and 3-second reloads</td>
+				</tr>
+			  </table>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal" onclick="begin()">Close</button>
+			</div>
+		  </div>
+		  
+		</div>
+		</div>
+		
+		<!--Game Over Modal -->
+		<div class="modal fade" id="gameOver" role="dialog" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog">
+
+		  <!-- Game Over Modal Content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" onclick="restart()">&times;</button>
+			  <h4 class="modal-title">Game Over</h4>
+			</div>
+			<div class="modal-body">
+			  <p>You have failed.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal" onclick="restart()">Retry</button>
+			</div>
+		  </div>
+		  
+		</div>
+		</div>
 	</body>
 </html>
