@@ -125,6 +125,8 @@ html, body, .page-wrapper {
         border-radius: 20%;
         margin: 4px;
         font-weight: bold; }
+        .page-wrapper .content .button-group a#portfolioBtn.active {
+          background-color: #ffd297; }
   .page-wrapper .fadeOut {
     opacity: 0;
     z-index: -1; }

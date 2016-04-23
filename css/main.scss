@@ -183,6 +183,10 @@ html, body, .page-wrapper {
 				border-radius: 20%;
 				margin: 4px;
 				font-weight: bold;
+
+				&#portfolioBtn.active {
+					background-color:$orange-two;
+				}
 			}
 		}
 	}
