@@ -2,12 +2,12 @@
 	var imageRepository = new function() {
 		// Define images
 		this.imgs = {
-			e1         : "/images/e.png",
-			e2   	   : "/images/e2.png",
-			e3         : "/images/e3.png",
-			bullet     : "/images/bullet1.png",
-			peanut     : "/images/peanut.png",
-			hunter     : "/images/hunter.png"
+			e1         : "/demos/elephant/images/e.png",
+			e2   	   : "/demos/elephant/images/e2.png",
+			e3         : "/demos/elephant/images/e3.png",
+			bullet     : "/demos/elephant/images/bullet1.png",
+			peanut     : "/demos/elephant/images/peanut.png",
+			hunter     : "/demos/elephant/images/hunter.png"
 		};
 
 		this.ready = false;
