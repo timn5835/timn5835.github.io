@@ -1,111 +1,75 @@
-<!DOCTYPE html>
-<html class="no-js" lang="en">
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Tim Nguyen</title>
-    <link href=
-    "http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" rel=
-    "stylesheet">
-    <style>
-    	.column a{
-    		margin-bottom: 15px;
-    	}
-
-    	.column a:last-child{
-    		float: right;
-    	}
-
-    	.unavailable {
-    		pointer-events: none;
-    		cursor: default;
-    		color: #D3D3D3;
-    	}
-    </style>
-    <script>
-        function setLink() {
-        	document.getElementById('multitask').href = "http://cs.neiu.edu/~mtdiff/uploads/finished/consent.php?workerID=" + new Date().valueOf() + "#";
-        }
-    </script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tim Nguyen</title>
+	<link rel="stylesheet" type="text/css" href="css/foundation.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 </head>
-<body onload="setLink()">
-    <div class="off-canvas-wrapper">
-        <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
-            <div class="off-canvas position-left reveal-for-large"
-            data-off-canvas="" data-position="left" id="my-info">
-                <div class="row column">
-                    <br>
-                    <img class="thumbnail" src="images/tim.jpg">
-                    <h5>Tim Nguyen</h5>
-                    <p>Ever since taking an introductory HTML course in highschool, I knew that I wanted to study web development.  From then on, I have worked on many projects and researched many web technologies.  I have learned much from my friends and professors at Northeastern Illinois University, where I graduated from with a Bachelor of Science Degree in Computer Science and a minor of Applied Mathematics.</p>
-                </div>
-            </div>
-            <div class="off-canvas-content" data-off-canvas-content="">
-                <div class="title-bar hide-for-large">
-                    <div class="title-bar-left">
-                        <button class="menu-icon" data-open="my-info" type=
-                        "button"></button> <span class="title-bar-title">Tim Nguyen</span>
-                    </div>
-                </div>
-                <div class="callout primary">
-                    <div class="row column">
-                        <h1>Below are some projects that I have worked on.</h1>
-                    </div>
-                </div>
-                <div class="row small-up-2 medium-up-3 large-up-4">
-                    <div class="column">
-                        <h6>To Do List</h6>
-                        <img class="thumbnail" src=
-                        "images/todo.png">
-                        <a href="https://github.com/timn5835/todo-list" target="_blank">Repository</a><a href="http://timn5835.github.io/demos/todo/" target="_blank">Demo</a>
-                    </div>
-                    <div class="column">
-                        <h6>Multitasking Research</h6>
-                        <img class="thumbnail" src=
-                        "images/multi.png">
-                        <a href="https://github.com/timn5835/Multitasking-Research" target="_blank">Repository</a><a id="multitask" href="" target="_blank">Demo</a>
-                    </div>
-                    <div class="column">
-                        <h6>Spelling Bee</h6>
-                        <img class="thumbnail" src=
-                        "images/spelling.png">
-                        <a href="https://github.com/timn5835/spellingbee" target="_blank">Repository</a><a href="http://timn5835.github.io/demos/spellingbee/" target="_blank">Demo</a>
-                    </div>
-                    <div class="column">
-                        <h6>Elephant Revenge</h6>
-                        <img class="thumbnail" src=
-                        "images/elephant.png">
-                        <a href="https://github.com/timn5835/elephant" target="_blank">Repository</a><a href="http://timn5835.github.io/demos/elephant/" target="_blank">Demo</a>
-                    </div>
-                    <div class="column">
-                        <h6>Shamrock Chicago</h6>
-                        <img class="thumbnail" src=
-                        "images/shamrock.png">
-                        <a class="unavailable">Repository</a><a href="http://shamrockchicago2016.com" target="_blank">Demo</a>
-                    </div>
-                    <div class="column">
-                        <h6>Celtic Chicago</h6>
-                        <img class="thumbnail" src=
-                        "images/celtic.png">
-                        <a class="unavailable">Repository</a><a href="http://celticchicago.com" target="_blank">Demo</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="row">
-                    <div class="medium-12 columns">
-                        <h3>Contact Me</h3>
-                        <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/timothy-nguyen-3416b293">linkedin</a> if you have any questions, want collaborate with me, or just get to know me better.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js">
-    </script> 
-    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js">
-    </script> 
-    <script>
-      $(document).foundation();
-    </script>
+<body>
+	<div class="page-wrapper no-flow small-12 columns">
+		<aside class="small-12 medium-6 large-7 columns">
+			<h1>Timothy Nguyen</h1>
+			<p>I am a junior-level front-end developer passionate about technology.  I just recently graduated from Northeastern Illinois University with a Bachelor of Science degree in Computer Science and a minor in Applied Mathematics.  There, I have worked as the Computer Science department's programming tutor and conducted research under several professors.  To learn more about my experiences please, click the button below.</p>
+
+			<button>Continue</button>
+		</aside>
+		<div class="content pushed-down small-12 columns">
+			<section class="exp">
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<div>
+							<i class="fa fa-html5"></i>
+						</div>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div>
+						The first time I ever worked with html was in my sophomore year of highschool, six years ago.  HTML has been my main choice for writing mark-up ever since, and I have learned a lot about all the amazing features that it makes available.  With HTML5, I have learned how to create clear, semantic web pages that allow displaying media beautifly with canvas and SVG features.
+					</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="small-12 medium-6 medium-push-6 columns">
+						<div>
+							<i class="fa fa-css3"></i>
+						</div>
+					</div>
+					<div class="small-12 medium-6 medium-pull-6 columns">
+						<div>
+						With CSS, you can style web pages to your heart's content.  I have had 3 years of experience writing organized CSS.  Ever since CSS3 has gained more support from web browsers, making smooth animations to complement content has been a lot easier.  Although vanilla CSS is great on its own, I often use SASS and LESS pre-processors and frameworks such as Zurb Foundation and Bootstrap to make my code more organized and efficient.
+					</div>
+					</div>
+					
+				</div>
+
+				<div class="row">
+					<div class="small-12 medium-6 columns">
+						<div>
+							<i>JS</i>
+						</div>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div>
+						Stylish and well-structured web pages are crucial to a site's appearance, but they don't have to be the only things that make a site.  With JavaScript and the many available libraries such as JQuery, Backbone.js, and AngularJS, I can create more engaging websites that manipulated data and allow users to interact with the content being viewed.
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="button-group">
+				<a class="button" href="Resume 03-2016.pdf">Resume</a>
+				<a class="button" href="https://www.linkedin.com/in/timothy-nguyen-3416b293">LinkedIn</a>
+				<a class="button" id="portfolioBtn">Portfolio</a>
+				<a class="button">Back</a>
+			</div>
+		</div>
+		<section class="background">
+		</section>
+	</div>
+
+	<script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>

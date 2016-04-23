@@ -1,0 +1,136 @@
+html, body, .page-wrapper {
+  height: 100%;
+  width: 100%;
+  font-size: 16px; }
+
+.page-wrapper {
+  padding: 0; }
+  .page-wrapper .background {
+    background: url("../images/bg.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1; }
+  .page-wrapper.no-flow {
+    overflow-x: hidden;
+    overflow-y: hidden; }
+  .page-wrapper aside {
+    position: relative;
+    height: 100%;
+    padding: 5%;
+    background-color: white;
+    opacity: .9;
+    z-index: 0;
+    -webkit-transition: transform 800ms ease-in-out;
+    -ms-transition: transform 800ms ease-in-out;
+    transition: transform 800ms ease-in-out; }
+    .page-wrapper aside.invisible {
+      transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      position: absolute; }
+    .page-wrapper aside button {
+      border-radius: 20%;
+      background-color: #FF9000;
+      color: white;
+      font-weight: bold;
+      padding: 10px;
+      cursor: pointer; }
+  .page-wrapper .content {
+    position: relative;
+    top: 50%;
+    background-color: #eff2f9;
+    min-height: 100%;
+    height: auto;
+    overflow: hidden;
+    opacity: .9;
+    z-index: 0;
+    padding: 5% 15%;
+    -webkit-transition: top 750ms ease-in-out;
+    -ms-transition: top 750ms ease-in-out;
+    transition: top 750ms ease-in-out; }
+    .page-wrapper .content.pushed-down {
+      position: relative;
+      top: 100%; }
+    .page-wrapper .content section.exp .row {
+      -webkit-transition: all 750ms ease-in-out;
+      -ms-transition: all 750ms ease-in-out;
+      transition: all 750ms ease-in-out;
+      margin-bottom: 50px;
+      position: relative; }
+      @media screen and (max-width: 40em) {
+        .page-wrapper .content section.exp .row {
+          height: auto;
+          min-height: 35%; } }
+      @media screen and (min-width: 40em) {
+        .page-wrapper .content section.exp .row {
+          height: 55%; } }
+      @media screen and (min-width: 976px) {
+        .page-wrapper .content section.exp .row {
+          height: 35%; } }
+      .page-wrapper .content section.exp .row > .columns {
+        position: relative;
+        display: table; }
+        @media screen and (min-width: 40em) {
+          .page-wrapper .content section.exp .row > .columns {
+            height: 100%; } }
+        @media screen and (max-width: 40em) {
+          .page-wrapper .content section.exp .row > .columns {
+            margin: 25px 0; } }
+        .page-wrapper .content section.exp .row > .columns div {
+          display: table-cell;
+          vertical-align: middle; }
+      .page-wrapper .content section.exp .row:first-child .columns:first-child:hover i:before {
+        color: #FF9000; }
+      .page-wrapper .content section.exp .row:nth-child(2) .columns:first-child:hover {
+        background-color: #ffd297; }
+      .page-wrapper .content section.exp .row:nth-child(3) i {
+        font-weight: bold;
+        color: #FF9000; }
+      .page-wrapper .content section.exp .row .columns:first-child {
+        text-align: center;
+        -webkit-transition: all 700ms ease-in-out;
+        -ms-transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; }
+        .page-wrapper .content section.exp .row .columns:first-child div i {
+          font-size: 100px; }
+        .page-wrapper .content section.exp .row .columns:first-child div i:before {
+          -webkit-transition: color 700ms ease-in-out;
+          -ms-transition: color 700ms ease-in-out;
+          transition: color 700ms ease-in-out; }
+    .page-wrapper .content .portfolio {
+      -webkit-transition: all 750ms ease-in-out;
+      -ms-transition: all 750ms ease-in-out;
+      transition: all 750ms ease-in-out;
+      margin-bottom: 25px; }
+      .page-wrapper .content .portfolio .columns {
+        margin-bottom: 15px; }
+        .page-wrapper .content .portfolio .columns a:last-child {
+          float: right; }
+    .page-wrapper .content .button-group {
+      text-align: center; }
+      .page-wrapper .content .button-group:before {
+        content: ' ';
+        width: 100%;
+        height: 3px;
+        color: black;
+        background: black;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 50px; }
+      .page-wrapper .content .button-group a {
+        background-color: #FF9000;
+        color: white;
+        border-radius: 20%;
+        margin: 4px;
+        font-weight: bold; }
+  .page-wrapper .fadeOut {
+    opacity: 0;
+    z-index: -1; }
+  .page-wrapper .unavailable {
+    pointer-events: none;
+    cursor: default;
+    color: grey; }
+
+/*# sourceMappingURL=main.css.map */
