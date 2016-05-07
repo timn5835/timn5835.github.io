@@ -1,3 +1,1 @@
-To begin the application, please navigate into the 'html' directory and open 'first.html'.  
-
-The main page, 'elephant_run.html' only has one js file linked to it, for performance reasons, but for ease of debugging and code analysis, this script is split into four js files included in the 'script' directory.
+This is just a short game made using object-oriented javascript and html5 canvas.  The instructions on how to play the game can be found when the page is loaded.  A demo can be seen at http://timn5835.github.io/demos/elephant/ .  Enjoy!
