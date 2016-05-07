@@ -22,6 +22,11 @@ h1 {
 	border: 1px solid black;
 	border-radius: 100%;
 	font-size: 35px;
+	box-shadow: 0 2px #0d0d0d;
+}
+
+#speaker:hover {
+	background-color: #dadada;
 }
 
 input[type='text'] {
