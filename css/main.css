@@ -15,9 +15,12 @@ html, body, .page-wrapper {
     left: 29%;
     top: 140px;
     background-color: rgba(255, 255, 255, 0.75); }
+    @media only screen and (max-width: 1023px) {
+      .page-wrapper header {
+        left: 16.66667%; } }
     @media only screen and (max-width: 639px) {
       .page-wrapper header {
-        left: 8.33333% !important; } }
+        left: 8.33333%; } }
     .page-wrapper header a {
       display: inline-block;
       padding: 7px 20px;
@@ -43,19 +46,24 @@ html, body, .page-wrapper {
       border: 3px solid #fff; }
   .page-wrapper main {
     padding: 50px 30px;
-    background-color: #fff; }
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; }
     .page-wrapper main .columns {
       margin-bottom: 30px; }
       .page-wrapper main .columns h4 {
         margin: 15px 0; }
       .page-wrapper main .columns > a:first-of-type {
         display: block;
-        position: relative; }
+        position: relative;
+        background-color: #5d534a; }
         .page-wrapper main .columns > a:first-of-type:before {
           content: ' ';
           position: absolute;
           width: 100%;
           height: 100%;
+          left: 0;
+          top: 0;
           transition: opacity 0.7s ease-in-out;
           background-color: #5d534a;
           opacity: 0.9; }
