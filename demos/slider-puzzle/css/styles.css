@@ -1,0 +1,176 @@
+button {
+  display: block;
+  margin: 20px auto 0 auto;
+  font-size: 20px;
+  background-color: #1C90F3;
+  color: white;
+  font-weight: 450;
+  padding: 5px 20px;
+  border: 2px solid white;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  
+}
+
+main {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  line-height: 0;
+  background-color: white;
+  opacity: 0;
+  background-color: transparent;
+}
+
+body > img {
+  width: 23vh;
+  height: 23vh;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+aside {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+aside:first-of-type {
+  opacity: 0;
+}
+
+aside#file input {
+  width: 75vh;
+  height: 75vh;
+  padding-top: 35vh;
+  padding-left: 20vh;
+  font-size: 20px;
+  line-height: 10px;
+  background-color: #a7a7a7;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+aside#file:before {
+  content: attr(data-error);
+  position: absolute;
+  font-size: 20px;
+  color: #ea1e1e;
+  top: 39vh;
+  width: 50vh;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+main div {
+  height: 25vh;
+  width: 25vh;
+  background-color: #a7a7a7;
+  background-size: 75vh;
+  color: white;
+  transition: transform 800ms ease-in-out, border-width 1s ease-in-out;
+  font-size: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+  position: relative;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  border: 2px solid white;
+}
+
+main div:nth-of-type(2) {
+  background-position: -25vh 0;
+}
+
+main div:nth-of-type(3) {
+  background-position: -50vh 0;
+}
+
+main div:nth-of-type(4) {
+  background-position: 0 -25vh;
+}
+
+main div:nth-of-type(5) {
+  background-position: -25vh -25vh;
+}
+
+main div:nth-of-type(6) {
+  background-position: -50vh -25vh;
+}
+
+main div:nth-of-type(7) {
+  background-position: 0 -50vh;
+}
+
+main div:nth-of-type(8) {
+  background-position: -25vh -50vh;
+}
+
+@media (orientation: portrait) {
+  main div {
+    height: 25vw;
+    width: 25vw;
+    background-size: 75vw;
+  }
+
+  main div:nth-of-type(2) {
+    background-position: -25vw 0;
+  }
+
+  main div:nth-of-type(3) {
+    background-position: -50vw 0;
+  }
+
+  main div:nth-of-type(4) {
+    background-position: 0 -25vw;
+  }
+
+  main div:nth-of-type(5) {
+    background-position: -25vw -25vw;
+  }
+
+  main div:nth-of-type(6) {
+    background-position: -50vw -25vw;
+  }
+
+  main div:nth-of-type(7) {
+    background-position: 0 -50vw;
+  }
+
+  main div:nth-of-type(8) {
+    background-position: -25vw -50vw;
+  }
+}
+
+
+main span {
+  display: block;
+  margin-top: 50%;
+}
+
+#empty {
+  background-color: transparent !important;
+  background-image: none!important;
+  border: 2px solid transparent;
+  transition: none!important;
+}
+  
+#image {
+  height: 75vh;
+  width: 75vh;
+}
+
+#img-container {
+  width: 75vh;
+  display: block;
+  margin: 0 auto;
+}
